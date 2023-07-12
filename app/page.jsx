@@ -1,7 +1,10 @@
+import { about } from "./data/about.js";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
-      <h1>Hi</h1>
+    <main className=" mx-auto max-w-6xl ">
+      <h1>Hi I'm {about.nickName}</h1>
+      <p>{about.bio}</p>
     </main>
   );
 }

@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/react";
+// import { Analytics } from "@vercel/analytics/react";
 import Header from "./components/Header";
 import { about } from "./data/about.js";
 import { metaData } from "./data/meta.js";
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} container mx-auto px-4 `}>
         <Header />
         {children}
-        <Analytics />
+        {/* <Analytics /> */}
       </body>
     </html>
   );

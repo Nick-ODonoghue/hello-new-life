@@ -5,9 +5,9 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'hello new life 3',
+  title: 'Hello New Life',
 
-  projectId: 'jxfznr2s',
+  projectId: '5l6gydcx',
   dataset: 'production',
 
   plugins: [deskTool(), visionTool()],

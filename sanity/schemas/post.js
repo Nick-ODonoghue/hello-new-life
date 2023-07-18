@@ -1,65 +1,61 @@
-import {defineField, defineType} from 'sanity'
-
-export default defineType({
+export default {
   name: 'post',
   title: 'Post',
   type: 'document',
   fields: [
-    defineField({
+    {
       name: 'title',
       title: 'Title',
       type: 'string',
-    }),
-    defineField({
+      description: 'Title of new post',
+    },
+    {
+      name: 'overview',
+      title: 'Overview',
+      type: 'string',
+      description: 'Add a breif overview of what the new post is about',
+    },
+    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
+      description:
+        '*ONLY once you have entered a title above, click the generate button **If you change the title after clicking the generate button, please click generate again',
       options: {
         source: 'title',
-        maxLength: 96,
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
       },
-    }),
-    defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
-    }),
-    defineField({
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
+    },
+    {
+      name: 'createdAt',
+      title: 'Post Created Date',
+      type: 'date',
+      description: 'Select the date you wish to be shown as the publication date for this post',
       options: {
-        hotspot: true,
+        dateFormat: 'DD-MM-YYYY',
+        calendarTodayLabel: 'Today',
       },
-    }),
-    defineField({
-      name: 'categories',
-      title: 'Categories',
+    },
+    {
+      name: 'content',
+      title: 'Content',
       type: 'array',
-      of: [{type: 'reference', to: {type: 'category'}}],
-    }),
-    defineField({
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
-    }),
+      description: 'Add you posts content',
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Alternative Text',
+            },
+          ],
+        },
+      ],
+    },
   ],
-
-  preview: {
-    select: {
-      title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-    prepare(selection) {
-      const {author} = selection
-      return {...selection, subtitle: author && `by ${author}`}
-    },
-  },
-})
+}

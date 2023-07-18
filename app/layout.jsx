@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} container mx-auto px-4 bg-white text-black selection:bg-pink-500 dark:bg-gray-900 dark:text-white/90  `}
+        className={`${inter.className} container mx-auto px-4 bg-slate-100 text-black/90 selection:bg-pink-600 selection:text-slate-200 dark:bg-black/80 dark:text-slate-200 dark:selection:text-black/80 `}
       >
         <Providers>
           <Header />

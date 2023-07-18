@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@portabletext/react": "^3.0.4",
     "@vercel/analytics": "^1.0.1",
     "autoprefixer": "10.4.14",
     "eslint": "8.44.0",

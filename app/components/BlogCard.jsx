@@ -13,7 +13,7 @@ export default async function BlogCard() {
   return (
     <div>
       <div className=" mb-6">
-        <h2 className=" text-4xl">All Posts</h2>
+        <h2 className=" text-4xl text-pink-600">All Posts</h2>
       </div>
       <ul className=" space-y-6">
         {data.map((post) => (
@@ -22,7 +22,7 @@ export default async function BlogCard() {
             <Link href={`/post/${post.slug.current}`} prefetch>
               <article>
                 <div className=" space-y-2">
-                  <h2 className=" text-2xl">{post.title}</h2>
+                  <h2 className=" text-2xl max-w-fit border-b-2 border-pink-500">{post.title}</h2>
                   <div>
                     <p>{post.overview}</p>
                   </div>

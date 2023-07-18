@@ -7,7 +7,7 @@ export default function Home() {
       <h1>Hi I'm {about.nickName}</h1>
       <p>{about.bio}</p>
 
-      <section>
+      <section className=" mt-20">
         <BlogCard />
       </section>
     </div>

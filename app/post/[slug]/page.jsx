@@ -2,9 +2,10 @@ import { PortableText } from "@portabletext/react";
 import { client } from "../../lib/sanity";
 import Image from "next/image";
 import { urlFor } from "@/app/lib/sanityImageUrl";
+import { groq } from "next-sanity";
 
 async function getPost(slug) {
-  const query = `*[_type == "post" && slug.current == "${slug}"][0]`;
+  const query = groq`*[_type == "post" && slug.current == "${slug}"][0]`;
   const data = await client.fetch(query);
   return data;
 }

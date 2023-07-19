@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { client } from "../lib/sanity";
+import { groq } from "next-sanity";
 
 async function getPosts() {
-  const query = `*[_type == "post"]`;
+  const query = groq`*[_type == "post"]`;
   const data = await client.fetch(query);
 
   return data;

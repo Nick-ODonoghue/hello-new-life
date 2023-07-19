@@ -7,7 +7,7 @@ export default function Header() {
     <header className=" py-6">
       <nav className=" flex justify-between items-center">
         <Link href="/">
-          <h1 className=" text-2xl">{header.title}</h1>
+          <h1 className=" text-3xl md:text-4xl font-bold tracking-widest text-pink-600 ">{header.title}</h1>
         </Link>
         <ThemeButton />
       </nav>

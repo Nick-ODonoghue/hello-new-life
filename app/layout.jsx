@@ -4,9 +4,11 @@ import Providers from "./components/Providers";
 import { about } from "./data/about.js";
 import { metaData } from "./data/meta.js";
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Raleway, Merriweather, Lobster } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const railway = Raleway({ subsets: ["latin"], style: ["italic", "normal"] });
+const merriweather = Merriweather({ subsets: ["latin"], weight: "400" });
+const lobster = Lobster({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: `${metaData.siteTitle} | ${metaData.siteAuthor}`,
@@ -17,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} container mx-auto px-4 bg-slate-100 text-black/90 selection:bg-pink-600 selection:text-slate-200 dark:bg-black/80 dark:text-slate-200 dark:selection:text-black/80 `}
+        className={`${lobster.className} container mx-auto max-w-5xl px-4 bg-slate-100 text-black/90 selection:bg-pink-600 selection:text-slate-200 dark:bg-black/80 dark:text-slate-200 dark:selection:text-black/80 `}
       >
         <Providers>
           <Header />

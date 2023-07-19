@@ -3,9 +3,11 @@ import { about } from "./data/about.js";
 
 export default function Home() {
   return (
-    <div className=" mx-auto max-w-6xl ">
-      <h1>Hi I'm {about.nickName}</h1>
-      <p>{about.bio}</p>
+    <div className=" mx-auto max-w-3xl ">
+      <div className=" mt-10 space-y-6">
+        <h1 className=" text-2xl">Hi I'm {about.nickName}</h1>
+        <p className=" text-lg">{about.bio}</p>
+      </div>
 
       <section className=" mt-20">
         <BlogCard />

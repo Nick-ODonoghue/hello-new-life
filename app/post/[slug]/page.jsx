@@ -25,7 +25,7 @@ export default async function page({ params }) {
       <div className=" mb-6">
         <h1 className=" text-2xl max-w-fit border-b-2 border-pink-500">{post.title}</h1>
       </div>
-      <div className=" space-y-6">
+      <div className=" space-y-6 prose prose-headings:text-pink-600 prose-img:rounded-2xl dark:prose-invert">
         <PortableText value={post.content} components={myPortableTextComponent} />
       </div>
     </>

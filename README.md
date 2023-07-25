@@ -1,16 +1,4 @@
-<h1 align="center">Hello New Life | NickOD.xyz</h1>
-
-![Screenshot of site - COMING]()
-
-<br>
-
-## Overview
-
-I was tasked with creating a multi language blog, allowing users to either choose to have the entire site in English or Hungarian.
-
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-<br>
 
 ## Getting Started
 
@@ -26,62 +14,21 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-<br>
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Live Site
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Coming Soon
+## Learn More
 
-[NickOD.xyz](https://www.NickOD.xyz)
+To learn more about Next.js, take a look at the following resources:
 
-<br>
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Sticking Points & What I learned
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-.....
+## Deploy on Vercel
 
-<br>
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Site To-Do
-
-- Sections:
-  - Navbar
-  - Home / Hero
-    - About Section
-  - Blog list
-  - Blog Pages
-  - Footer / Social Contacts
-- Smooth scrolling
-
-<br>
-
-## Built with
-
-- A mobile first workflow
-  - CSS Flexbox
-- React
-  - Next.js
-- TailwindCSS
-  - Fully Responsive
-- Testing
-  - Jest
-  - react-testing-library
-
-<br>
-
-## Author
-
-- Website - [NickOD.xyz](http://www.NickOD.xyz)
-- My LinkedIn - [LinkedIn](https://www.linkedin.com/in/nick-odonoghue/)
-
-<br>
-
-## Useful Resources
-
-.....
-
-<br>
-
-## Acknowledgments
-
-.....
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -1,8 +1,34 @@
+<h1 align="center">Hello New Life | NickOD.xyz</h1>
+
+![Screenshot of site - COMING]()
+
+<br>
+
+## Overview
+
+I was tasked with creating a multi language blog, allowing users to either choose to have the entire site in English or Hungarian.
+
+Having looked into different options for implementing the blog, I decided to use Sanity.io as the CMS. I've been wanting to implement a CMS into a project for a while now and this seemed like the perfect opportunity. Sanity studio will be perfect for the client as it seems to be very user friendly and easy to use.
+
+<br>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+<br>
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -14,21 +40,66 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Live Site
 
-## Learn More
+Live development site:
 
-To learn more about Next.js, take a look at the following resources:
+Watch the development as it happens and the site evolves [Hello New Life](https://hello-new-life.vercel.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<br>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Sticking Points & What I learned
 
-## Deploy on Vercel
+- TypeScript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is my first project using typescript. I've been learning it along the way with the help of Codecademy and the official docs. I'm really enjoying it so far and I'm looking forward to using it more in the future.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br>
+
+## Site To-Do
+
+- Sections:
+  - Landing Page
+  - UK & HU routes
+    - Navbar
+    - Home
+      - About Section
+    - Blog list
+    - Blog Pages
+    - Footer / Social Contacts
+- Sanity.io Integreation
+
+<br>
+
+## Built with
+
+- Mobile First Workflow
+- React
+  - Next.js 13
+  - TypeScript
+- TailwindCSS
+  - Fully Responsive
+- Testing
+  - Jest
+  - react-testing-library
+
+<br>
+
+## Author
+
+- Website - [NickOD.xyz](http://www.NickOD.xyz)
+- My LinkedIn - [LinkedIn](https://www.linkedin.com/in/nick-odonoghue/)
+
+<br>
+
+## Useful Resources
+
+.....
+
+<br>
+
+## Acknowledgments
+
+.....

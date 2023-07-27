@@ -6,7 +6,7 @@ import Image from "next/image";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 
 async function getPost(slug: string) {
-  const query = groq`*[_type == "postHU" && slug.current == "${slug}"][0]`;
+  const query = groq`*[_type == "postEN" && slug.current == "${slug}"][0]`;
   const data = await client.fetch(query);
   return data;
 }

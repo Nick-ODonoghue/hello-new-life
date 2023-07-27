@@ -11,6 +11,7 @@ async function getData() {
 
 export default async function BlogCard() {
   const data = (await getData()) as Post[];
+
   return (
     <div>
       <div>

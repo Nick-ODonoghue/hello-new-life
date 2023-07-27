@@ -23,7 +23,7 @@ export default {
         '*ONLY once you have entered a title above, click the generate button **If you change the title after clicking the generate button, please click generate again',
       options: {
         source: 'title',
-        slugify: (input) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
+        slugify: (input: string) => input.toLowerCase().replace(/\s+/g, '-').slice(0, 200),
       },
     },
     {

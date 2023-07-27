@@ -1,4 +1,4 @@
-import BlogCard from "@/app/(languagePaths)/hu/components/BlogCard";
+import BlogCard from "@/app/(languagePaths)/uk/components/BlogCard";
 
 export default function UKHomePage() {
   return (

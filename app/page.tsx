@@ -10,7 +10,7 @@ export default function Home() {
       {/* <ThemeButton /> */}
       <HeadingTypewriter />
       <div className=" flex gap-8 justify-center items-center max-w-sm">
-        <Link href="/uk" prefetch className=" text-xl font-medium">
+        <Link href="/en" prefetch className=" text-xl font-medium">
           Enter
         </Link>
         <div className=" text-4xl font-thin">|</div>

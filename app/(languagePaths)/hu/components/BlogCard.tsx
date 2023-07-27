@@ -11,6 +11,7 @@ async function getData() {
 
 export default async function BlogCard() {
   const data = (await getData()) as Post[];
+
   return (
     <div>
       <div>
@@ -20,7 +21,7 @@ export default async function BlogCard() {
         {data.map((post) => (
           <li key={post._id}>
             <p>{post.createdAt}</p>
-            <Link href={`/post/${post.slug.current}`} prefetch>
+            <Link href={`/hu/post/${post.slug.current}`} prefetch>
               <article>
                 <div>
                   <h2>{post.title}</h2>
@@ -28,7 +29,7 @@ export default async function BlogCard() {
                     <p>{post.overview}</p>
                   </div>
                 </div>
-              </article>{" "}
+              </article>
             </Link>
           </li>
         ))}

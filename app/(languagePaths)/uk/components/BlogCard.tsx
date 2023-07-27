@@ -1,6 +1,7 @@
 import { groq } from "next-sanity";
 import { client } from "../../../lib/sanity";
 import Link from "next/link";
+import { Post } from "@/app/lib/interface";
 
 async function getData() {
   const query = groq`*[_type == "postEN"]`;
@@ -9,7 +10,7 @@ async function getData() {
 }
 
 export default async function BlogCard() {
-  const data = await getData();
+  const data = (await getData()) as Post[];
   return (
     <div>
       <div>

@@ -13,20 +13,24 @@ export default async function BlogCard() {
   const data = (await getData()) as Post[];
 
   return (
-    <div>
-      <div>
-        <h2>All Posts</h2>
+    <div className=" mt-10">
+      <div className=" mb-10">
+        <h2 className=" text-4xl font-semibold sm:text-5xl xl:text-6xl">All Posts...</h2>
       </div>
-      <ul>
+      <ul className=" space-y-10">
         {data.map((post) => (
           <li key={post._id}>
-            <p>{post.createdAt}</p>
+            <p className=" text-xs font-semibold xl:text-sm">{post.createdAt}</p>
             <Link href={`/hu/post/${post.slug.current}`} prefetch>
-              <article>
-                <div>
-                  <h2>{post.title}</h2>
+              <article className=" max-w-2xl border border-slate-500 rounded-md bg-[#e788b9] shadow-md hover:shadow-none transition-shadow duration-500">
+                <div className=" space-y-2 m-2">
                   <div>
-                    <p>{post.overview}</p>
+                    <h2 className=" text-lg font-black border-b border-b-pink-200 inline-block xl:text-xl">
+                      {post.title}
+                    </h2>
+                  </div>
+                  <div>
+                    <p className=" line-clamp-2 xl:text-lg">{post.overview}</p>
                   </div>
                 </div>
               </article>

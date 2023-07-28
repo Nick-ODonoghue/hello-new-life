@@ -21,7 +21,7 @@ const HeadingTypewriter = () => {
   return (
     <>
       <Link href="https://hellonew.life">
-        <h1 id="typewriter" className=" text-4xl font-semibold"></h1>
+        <h1 id="typewriter" className=" text-4xl font-semibold sm:text-5xl xl:text-6xl"></h1>
       </Link>
     </>
   );

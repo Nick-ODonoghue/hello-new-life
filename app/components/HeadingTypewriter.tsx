@@ -7,11 +7,12 @@ const HeadingTypewriter = () => {
   useEffect(() => {
     const typewriter = new Typewriter("#typewriter", {
       autoStart: false,
-      loop: false,
-      cursor: "",
+      loop: true,
+      cursor: "|",
+      deleteSpeed: 100,
     });
 
-    typewriter.pauseFor(1500).typeString("Hello new life...").start();
+    typewriter.pauseFor(1000).typeString("Hello new life...").pauseFor(2000).start();
 
     return () => {
       typewriter.stop();

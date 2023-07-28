@@ -8,7 +8,7 @@ const specialElite = Special_Elite({ subsets: ["latin"], weight: "400" });
 export const metadata: Metadata = {
   title: "Hello New Life",
   description:
-    "Discover a Joyful Journey: Join us at Hello New Life, a captivating bilingual blog, as we share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Start your extraordinary adventure today!",
+    "Discover a Joyful Journey: Join me at Hello New Life, a captivating bilingual blog, as I share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Share in my extraordinary adventure today!",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

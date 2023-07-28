@@ -32,10 +32,10 @@ export default async function page({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <div>
-        <h1>{post.title}</h1>
+      <div className=" mt-10">
+        <h1 className=" text-xl font-extrabold md:text-2xl xl:text-3xl">{post.title}</h1>
       </div>
-      <div className=" space-y-6 prose">
+      <div className=" space-y-6 my-10 px-2 py-4 prose prose-h2:text-2xl max-w-6xl border border-slate-500 rounded-md bg-[#e788b9] shadow-md sm:p-4 md:p-6 lg:p8">
         <PortableText value={post.content} components={myPortableTextComponent} />
       </div>
     </>

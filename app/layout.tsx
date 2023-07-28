@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${specialElite.className} container mx-auto max-w-5xl px-4 bg-slate-100 text-slate-700 selection:bg-pink-300 selection:text-slate-100 dark:bg-pink-300 dark:text-slate-700 dark:selection:slate-100 dark:selection:bg-pink-400 `}
+        className={`${specialElite.className} container mx-auto max-w-5xl px-4 bg-gradient-to-r from-pink-400 via-pink-300 to-pink-400 text-slate-700 selection:bg-pink-300 selection:text-slate-100`}
       >
         <Providers>
           <main>{children}</main>

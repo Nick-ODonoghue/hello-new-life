@@ -20,7 +20,14 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    images: `/og-image.png`,
+    title: "Hello New Life",
+    description:
+      "Discover a Joyful Journey: Join me at Hello New Life, a captivating bilingual blog, as I share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Share in my extraordinary adventure today!",
+    url: "https://www.hellonew.life/",
+    siteName: "Hello New Life",
+    images: `/og-hello-new-life.png`,
+    locale: "en_US",
+    type: "website",
   },
 };
 

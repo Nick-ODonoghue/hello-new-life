@@ -6,9 +6,29 @@ import Providers from "./components/Providers";
 const specialElite = Special_Elite({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hellonew.life/"),
   title: "Hello New Life",
   description:
     "Discover a Joyful Journey: Join me at Hello New Life, a captivating bilingual blog, as I share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Share in my extraordinary adventure today!",
+  referrer: "origin-when-cross-origin",
+  keywords: ["Eszter's Blog", "Bilingual Blog", "christianity", "Blog about faith"],
+  authors: { name: "Eszter" },
+  creator: "https://nickod.xyz/",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "Hello New Life",
+    description:
+      "Discover a Joyful Journey: Join me at Hello New Life, a captivating bilingual blog, as I share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Share in my extraordinary adventure today!",
+    url: "https://www.hellonew.life/",
+    siteName: "Hello New Life",
+    images: `/og-hello-new-life.png`,
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

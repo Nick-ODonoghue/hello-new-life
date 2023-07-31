@@ -19,6 +19,10 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     description: post.overview,
     alternates: {
       canonical: `/en/post/${params.slug}`,
+      languages: {
+        "en-US": `/en/post/${params.slug}`,
+        "hu-HU": `/hu/post/${params.slug}`,
+      },
     },
   };
 }

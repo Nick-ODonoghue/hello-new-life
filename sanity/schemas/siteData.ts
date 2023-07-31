@@ -16,11 +16,48 @@ export default {
       description: 'The author of the site',
     },
     {
-      name: 'authorBio',
-      title: 'Author Bio',
-      type: 'text',
-      description: 'The bio of the author',
+      name: 'authorBioEn',
+      title: 'Author Bio English',
+      type: 'array',
+      description: 'The bio of the author in English',
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Alternative Text',
+            },
+          ],
+        },
+      ],
     },
+    {
+      name: 'authorBioHu',
+      title: 'Author Bio Hungarian',
+      type: 'array',
+      description: 'The bio of the author in Hungarian',
+      of: [
+        {
+          type: 'block',
+        },
+        {
+          type: 'image',
+          fields: [
+            {
+              type: 'text',
+              name: 'alt',
+              title: 'Alternative Text',
+            },
+          ],
+        },
+      ],
+    },
+
     {
       name: 'authorNickname',
       title: 'Author Nickname',

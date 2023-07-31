@@ -12,9 +12,14 @@ async function getPost(slug: string) {
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const post = (await getPost(params.slug)) as Post;
+
   return {
-    title: (await getPost(params.slug)).title,
-    description: (await getPost(params.slug)).overview,
+    title: post.title,
+    description: post.overview,
+    alternates: {
+      canonical: `/en/post/${params.slug}`,
+    },
   };
 }
 

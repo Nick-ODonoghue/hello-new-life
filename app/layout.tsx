@@ -6,6 +6,7 @@ import Providers from "./components/Providers";
 const specialElite = Special_Elite({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.hellonew.life/"),
   title: "Hello New Life",
   description:
     "Discover a Joyful Journey: Join me at Hello New Life, a captivating bilingual blog, as I share inspiring stories of transformation and growth after embracing Christianity. Explore the beauty of a fresh perspective and find hope in a newfound faith. Share in my extraordinary adventure today!",

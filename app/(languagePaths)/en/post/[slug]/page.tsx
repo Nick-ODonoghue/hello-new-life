@@ -11,6 +11,25 @@ async function getPost(slug: string) {
   return data;
 }
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  return {
+    title: (await getPost(params.slug)).title,
+    description: (await getPost(params.slug)).overview,
+  };
+}
+
+export async function generateStaticParams() {
+  const query = groq`*[_type == "postEN"]{slug}`;
+  const data = await client.fetch(query);
+  return data.map((post: { slug: string }) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+    };
+  });
+}
+
 export default async function page({ params }: { params: { slug: string } }) {
   const post = (await getPost(params.slug)) as Post;
 
